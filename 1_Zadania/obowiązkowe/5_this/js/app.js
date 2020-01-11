@@ -1,4 +1,5 @@
-//Zadanie 0
+//5.0
+
 function Car(brand, color) {
     this.brand = brand;
     this.color = color;
@@ -12,8 +13,33 @@ function Car(brand, color) {
         this.numberOfKilometers += d;
     }
 }
-//Zadanie 1
-//Zadanie 2
+
+//5.1
+
+const car = {
+    brand: 'Mercedes',
+    color: 'Czarny',
+    numberOfKilometers: 0,
+    printCarInfo() {
+        return [this.brand, this.color, this.numberOfKilometers]
+    },
+    drive(km) {
+        return this.numberOfKilometers + km || 0
+    },
+}
+
+car.service = ['10.10.2018', '10.10.2019'];
+car.addService = function (str) {
+    this.service.push(str)
+}
+car.addService('10.10.2020');
+
+car.getService = function () {
+    return this.service;
+}
+
+//5.2
+
 var calculator = {
     save: function (newA, newB) {
         this.a = newA;
@@ -30,4 +56,17 @@ var calculator = {
 calculator.save(2, 3);
 console.log(calculator.sum());
 console.log(calculator.multiply());
-//Zadanie 3
+
+//5.3
+const stairs = {
+    step: 0,
+    up() {
+        this.step++
+    },
+    down() {
+        this.step--
+    },
+    printStep() {
+        return this.step
+    }
+}
