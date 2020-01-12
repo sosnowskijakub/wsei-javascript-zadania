@@ -1,3 +1,4 @@
+//7.0
 /**
  * Zagniezdzanie funkcji.
  * Przesledz krok po kroku kazda linijke kodu. Kazda!
@@ -5,28 +6,28 @@
  */
 
 
-//Twoj komentarz ...
+//Utworzenie funkcji jeden()
 function jeden() {
 
-    //Twoj komentarz ...
+    //Inicjacja zmiennej zmienna1 i przypisanie jej wartości 1
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //Utworzenie funckji dwa()
     function dwa() {
 
-        //Twoj komentarz ...
+        //Wypisanie w konsoli wartości zmienna1
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //Inicjacja zmiennej zmienna2 i przypisanie jej wartości 3
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //wywołanie funkcji dwa()
     dwa();
 
-    //Twoj komentarz ...
+    //Wypisanie w konsoli wartości zmienna2
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//wywołanie funkcji jeden()
 jeden()
